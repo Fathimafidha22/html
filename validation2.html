@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STUDENT REGISTRATION FORM </title>
+</head>
+<body><center>
+  <h2>VALIDATION FORM</h2>
+<form>
+<label>NAME:</label>
+<input type="text" name="name"id=name>
+<br><br>
+<label>EMAIL:</label>
+<input type="email" name="email"id=email>
+<br><br>
+<label>PASSWORD:</label>
+<input type="password" name="password"id=password>
+<br><br>
+<label>AGE:</label>
+<input type="number" name="age"id=age>
+<br><br>
+<label>GENDER:</label>
+<input type="radio" name="gender" value="male">MALE
+<input type="radio" name="gender" value="female">FEMALE
+<br><br>
+<label>COURSES:</label>
+<select name="course">
+  <option>MBA</option>
+  <option>MCA</option>
+  <option>BTECH</option>
+</select>
+<br><br>
+<lable>HOBBIES:</label>
+<input type="checkbox" name="hobby" value="reading"> reading
+<input type="checkbox" name="hobby" value="sports"> sports
+<input type="checkbox" name="hobby" value="music"> music
+<br><br>
+<label>DATE OF BIRTH:</label>
+<input type:"date" name="dob"id=dob>
+<br><br>
+<input type="submit" value="register">
+<input type="reset" value="clear">
+</form>
+</center>
+<script>
+function validateForm()
+{
+var name = document.getElementByld("name").value;
+var email = document.getElementByld("email").value;
+var password = document.getElementByld("password").value;
+var age = document.getElementByld("age").value;
+var dob = document.getElementByld("dob").value;
+var hobby = document.getElementByName("hobby");
+var selected = false;
+var msg =" ";
+  
+if(name ==" ")
+{
+  msg +="enter name\n";
+}
+if(email ==" ")
+{
+  msg +="enter email\n";
+}
+if(password ==" ")
+{
+  msg +="enter password\n";
+}
+if(age ==" ")
+{
+  msg +="enter age\n";
+}
+if(gender ==" ")
+{
+  msg +="enter gender\n";
+}
+
+if(dob ==" ")
+{
+  msg +="enter dob\n";
+}
+for(var i=0;i<hobby.length;i++)
+{
+if (hobby[i].checked)
+{
+selected .true
+}
+if(msg ! ==" ")
+{
+  alert(msg);
+  return false;
+}
+else
+{
+  alert("registration successful");
+  return true;
+}
+}
+</script>
+</body>
+</html>
