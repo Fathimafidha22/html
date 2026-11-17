@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>FIDHA</title>
+</head>
+<body>
+<h1><center>CHANGE BACKGROUND</h1>
+<button onclick="changeColor()">change </button>
+<script>
+let color =["blue","red","orange","yellow"];
+let i=0;
+function changeColor()
+{
+document.body.style.backgroundColor=color[i];
+i++;
+if(i==color.length)
+{
+i=0;
+}
+}
+</script>
+</body>
+</html>
